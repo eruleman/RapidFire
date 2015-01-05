@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.amphibiousachievement"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.amphibiousachievement.ExpandablePanel
+            android:id="@+id/foo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            example:animationDuration="500"
+            example:collapsedHeight="100dip"
+            example:content="@+id/value"
+            example:handle="@+id/container" >
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@id/value"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text=" fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd v v v fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd fsdffds fdsfdsf fdffsd  fgd fgfgsd fsdffds fdsfdsf fdffsd" />
+
+                <ImageView
+                    android:id="@+id/expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/value"
+                    android:src="@drawable/expand_content_indicator" />
+            </RelativeLayout>
+        </com.amphibiousachievement.ExpandablePanel>
+
+        <com.amphibiousachievement.ExpandablePanel
+            android:id="@+id/foo2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            example:animationDuration="500"
+            example:collapsedHeight="100dip"
+            example:content="@+id/Question1_Container"
+            example:handle="@+id/Question1_Container" >
+            
+
+            <LinearLayout
+                android:id="@id/Question1_Container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                    
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/Question1_ColorBar"
+                    android:layout_width="10dp"
+                    android:layout_height="150dp"
+                    android:background="#ff0000" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/Question1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp" 
+                    android:orientation="vertical"
+                    android:layout_weight="1" >
+                    
+                    <TextView
+                        android:id="@+id/Question1_Problem"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:text="Factor the following: x2 - 64" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/Question1_Answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                      	
+                            <TextView
+						        android:id="@+id/textview_incorrect_answer_message"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:paddingLeft="10dp"
+						        android:paddingBottom="8dp"
+						        android:text="(x+8)(x+8)" 
+						        android:textSize="18sp"
+						        android:textColor="#ff0000"
+						    	android:drawableLeft="@drawable/incorrect_answer_x" 
+						    	android:drawablePadding="10dp"/>
+                            
+                            <TextView
+						        android:id="@+id/textview_correct_answer_message"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:paddingLeft="10dp"
+						        android:paddingBottom="8dp"
+						        android:text="(x+8)(x-8)" 
+						        android:textSize="18sp"
+						    	android:drawableLeft="@drawable/correct_answer_checkmark" 
+						    	android:drawablePadding="10dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Question1_Explanation"
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp"
+                        android:text="This is a difference of two squares, x2 and 64">
+                    </TextView>
+                    
+                    <ImageView
+                    android:id="@+id/expand2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_gravity="right"
+                    android:src="@drawable/expand_content_indicator" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.amphibiousachievement.ExpandablePanel>
+    </LinearLayout>
+</ScrollView>

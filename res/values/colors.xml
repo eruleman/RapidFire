@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="gray">#AAAAAA</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+   	<color name="green">#00FF00</color>
+	<color name="whitegray">#FFF2F2F2</color>
+	<color name="red">#FF0000</color>
+	
+	<!-- Button Colors -->
+	<color name="light_blue">#8066CCFF</color>
+	<color name="crayola_blue">#C00066CC</color>
+	
+	<color name="background_holo_light">#fff3f3f3</color>
+</resources>

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:orientation="vertical"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@drawable/subject_selection_rounded_shape" >
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="Math" >
+        </TextView>
+	    <ImageView
+	        android:id="@+id/math_image"
+	        android:gravity="center"
+	        android:src="@drawable/calculator"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	    </ImageView>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:orientation="horizontal"
+	   	 	android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/practice_math_button"
+	        style="@style/PracticeButton"
+	        android:onClick="onClick"
+	        android:background="@drawable/practice_button" 
+	    	android:text="Practice" />
+	    <Button
+	        android:id="@+id/review_math_button"
+	        style="@style/PracticeButton"
+	        android:onClick="onClick"
+	        android:background="@drawable/review_button" 
+	    	android:text="Review" />
+	   	</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:orientation="vertical"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/subject_selection_rounded_shape" >
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="Writing" >
+        </TextView>
+	    <ImageView
+	        android:id="@+id/writing_image"
+	        android:gravity="center"
+	        android:src="@drawable/pencil"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	    </ImageView>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:orientation="horizontal"
+	   	 	android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/practice_writing_button"
+	        style="@style/PracticeButton"
+	        android:background="@drawable/practice_button" 
+	        android:onClick="onClick"
+	    	android:text="Practice" />
+	    <Button
+	        android:id="@+id/review_writing_button"
+	        style="@style/PracticeButton"
+	        android:background="@drawable/review_button" 
+	        android:onClick="onClick"
+	    	android:text="Review" />
+	   	</LinearLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:orientation="vertical"
+	    android:layout_height="0dp"
+	    android:layout_marginTop="20dp"
+	    android:layout_weight="1"
+	    android:background="@drawable/subject_selection_rounded_shape" >
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:text="Critical Reading" >
+        </TextView>
+	    <ImageView
+	        android:id="@+id/critical_reading_image"
+	        android:gravity="center"
+	        android:src="@drawable/magnifying_glass"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	    </ImageView>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	    	android:orientation="horizontal"
+	   	 	android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/practice_critical_reading_button"
+	        style="@style/PracticeButton"
+	        android:background="@drawable/practice_button" 
+	        android:onClick="onClick"
+	    	android:text="Practice" />
+	    <Button
+	        android:id="@+id/review_critical_reading_button"
+	        style="@style/PracticeButton"
+	        android:background="@drawable/review_button" 
+	        android:onClick="onClick"
+	    	android:text="Review" />
+	   	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

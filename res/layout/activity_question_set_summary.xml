@@ -1,0 +1,684 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".QuestionSetSummary" 
+    android:background="@drawable/backrepeat">
+
+    <LinearLayout
+     android:layout_width="match_parent"
+   	 android:layout_height="match_parent"
+   	 android:orientation="vertical" >
+   	 
+    <LinearLayout
+        android:id="@id/Question1_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/Question1_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question1_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question1_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64..."
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question1_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question1_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question1_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question1_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question1_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question1_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question1_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/Question2_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+
+        <TextView
+            android:id="@+id/Question2_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question2_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question2_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64"
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question2_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question2_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question2_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question2_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question2_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question2_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question2_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+   	 
+    <LinearLayout
+        android:id="@+id/Question3_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/Question3_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question3_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question3_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64"
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question3_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question3_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question3_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question3_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question3_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question3_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question3_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/Question4_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/Question4_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#00ff00" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question4_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question4_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64"
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question4_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question4_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question4_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question4_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question4_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question4_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question4_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/Question5_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/Question5_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#ff0000" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question5_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question5_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64"
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question5_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question5_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question5_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question5_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question5_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question5_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question5_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/Question6_Container"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" 
+        android:background="#ffffff"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:onClick="onClick">
+
+        <TextView
+            android:id="@+id/Question6_ColorBar"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#00ff00" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/Question6_Subcontainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/Question6_Problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factor the following: x2 - 64"
+                android:textSize="20sp"
+                android:textColor="#0066FF" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/Question6_IncorrectAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/incorrect_answer_x"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x+8)"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                	android:id="@+id/Question6_CorrectAnswerAndTime"
+                    android:layout_width="match_parent"
+   					android:layout_height="wrap_content"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/Question6_CorrectAnswer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correct_answer_checkmark"
+                android:drawablePadding="10dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="5dp"
+                android:text="(x+8)(x-8)"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Question6_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/timer"
+                android:text="1.5s" />
+ 
+            </LinearLayout>
+
+            <View
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_marginLeft="5dp"
+			    android:layout_marginBottom="2dp"
+			    android:background="@android:color/darker_gray"/>
+            
+            <LinearLayout
+                	android:id="@+id/Question6_ExplanationAndGoToIndicator"
+                    android:layout_width="match_parent"
+   					android:layout_height="0dp"
+   					android:layout_marginBottom="2dp"
+   					android:orientation="horizontal" 
+   					android:layout_weight="1"
+   					android:gravity="center">
+            <TextView
+                android:id="@+id/Question6_Explanation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="This is a difference of two"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Question6_GoToIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightward_caret" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
